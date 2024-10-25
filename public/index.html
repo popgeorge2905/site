@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>CGR - Reparații Calculatoare</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo CGR" class="logo">
+        <h1>CGR - Servicii IT</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Despre Noi</a></li>
+                <li><a href="#services">Servicii</a></li>
+                <li><a href="#team">Echipa Noastră</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#user-management">Creare Cont</a></li>
+                <li><a href="#login">Conectare</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+        <h2>Despre Noi</h2>
+        <p>CGR este o firmă dedicată reparațiilor de calculatoare, oferind soluții rapide și eficiente pentru toate problemele tehnice. Cu o echipă de experți în domeniu, garantăm satisfacția clienților noștri.</p>
+        <p>Ne mândrim cu o experiență de peste 10 ani în domeniu, ajutând clienții să își mențină echipamentele în cea mai bună stare.</p>
+    </section>
+
+    <section id="services" class="fade-in">
+        <h2>Serviciile Noastre</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Reparații Laptop</h3>
+                <p>Diagnosticare și reparație pentru toate brandurile de laptopuri.</p>
+            </div>
+            <div class="service">
+                <h3>Reparații Desktop</h3>
+                <p>Servicii complete de reparație și întreținere pentru calculatoare desktop.</p>
+            </div>
+            <div class="service">
+                <h3>Asistență Tehnică</h3>
+                <p>Asistență pentru probleme software și hardware, inclusiv instalări și configurări.</p>
+            </div>
+            <div class="service">
+                <h3>Curățare Hardware</h3>
+                <p>Curățare interioară și exterioară pentru a prelungi durata de viață a echipamentelor.</p>
+            </div>
+            <div class="service">
+                <h3>Upgrade Software</h3>
+                <p>Actualizări și upgrade-uri pentru a menține sistemele de operare și aplicațiile la zi.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="fade-in">
+        <h2>Echipa Noastră</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="Membru Echipa 1">
+                <h3>Ion Popescu</h3>
+                <p>Expert în reparații hardware cu 5 ani de experiență.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.jpg" alt="Membru Echipa 2">
+                <h3>Nicusor Andreescu</h3>
+                <p>Specialist în software și asistență tehnică.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team3.jpg" alt="Membru Echipa 3">
+                <h3>George Marin</h3>
+                <p>Inginer IT cu expertiză în securitate cibernetică.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <p>Ne poți contacta la:</p>
+        <p>Email: <a href="mailto:contact@cgr.com">contact@cgr.com</a></p>
+        <p>Telefon: <a href="tel:+40123456789">+40 123 456 789</a></p>
+    </section>
+
+    <section id="user-management" class="fade-in">
+        <h2>Creare Cont</h2>
+        <form id="user-form">
+            <input type="text" id="username" placeholder="Nume Utilizator" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Parolă" required>
+            <button type="submit">Creează Utilizator</button>
+        </form>
+        <div id="user-message" class="message"></div>
+    </section>
+
+    <section id="login" class="fade-in">
+        <h2>Conectare</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Parolă" required>
+            <button type="submit">Conectare</button>
+        </form>
+        <div id="login-message" class="message"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CGR - Toate drepturile rezervate</p>
+    </footer>
+
+    <div id="subscribe-popup" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Abonează-te la newsletter!</p>
+            <input type="email" id="newsletter-email" placeholder="Email" required>
+            <button id="subscribe-btn">Abonează-te</button>
+            <button id="never-show">Nu mai arăta acest pop-up</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
